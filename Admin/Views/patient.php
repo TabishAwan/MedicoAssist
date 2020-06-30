@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<title>patient</title>
+<html>
+	<?php include '../Includes/header.php';?>
+	<body>
+		<?php include '../Includes/sidenav.php';?>
+		<div class="main-content" id="panel">
+			<?php include '../Includes/navbar.php';?>
+
+			<div class="container" , align="center" >
+				<div class="content">
+          			<!-- Add Data Here-->             
+              		<div class="row">
+                    	<div class="col-md-12">
+                      		<div class="card">
+                    			<div class="card-header card-header-info card-header-icon">
+                      				<div class="card-icon">
+                        				<i class="fa fa-edit" style="font-size: 30px"></i>
+                      				</div>
+                      				<h4 class="card-title">List of Patients</h4>
+                    			</div>
+		                        <div class="card-body">
+		                          <div class="toolbar">
+		                            <div class="main-content" id="panel">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+		</div>
+
+		 </div><br>
+		                          <div class="material-datatables">
+		                            <div class="table-responsive">
+		                              <table width="100%" class="table table-striped table-no-bordered table-hover dataTable dtr-inline"  role="grid" aria-describedby="datatables_info" style="width: 100%;" cellspacing="0" id="patientTable">
+	                                        <thead>
+                                                <tr class="bg-info text-white">
+                                                  <th>Sr No.</th>
+                                                  <th>address </th>
+                                                  <th>Age </th>
+                                                  <th>Detail</th>
+                                                  <th>Email</th>
+                                                  <th>Gender</th>
+                                                  <th>Name</th>
+                                                  <th>Phone </th>
+                                                  <th>Bloodgroup</th>
+                                                        <th>Image</th>
+                                                  <th>Delete</th>
+                                                </tr>
+	                                        </thead>
+	                                        <tbody id="patientTableBody">  
+	                                        	<!-- Data From Database-->
+	                                   		</tbody>
+		                              </table>  
+		                            </div>
+		                          </div>
+		                        </div>
+                    		<!-- end content-->
+                      		</div>
+                      	<!--  end card  -->
+                    	</div>
+                    <!-- end col-md-12 -->
+              		</div>
+          			<!-- end row -->
+        		</div>
+			</div>
+		</div>
+
+		<?php include '../Includes/plugins.php';?>
+		<?php include '../Includes/footer.php';?>
+		  <script src="../JSControllers/patientController.js"></script>
+
+	</body>
+</html>
